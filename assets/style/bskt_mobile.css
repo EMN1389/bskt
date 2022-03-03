@@ -1,0 +1,235 @@
+@charset "UTF-8";
+/*feuille de style BSKT Mobile (style principale) */
+/*feuille des variables des couleurs et des polices pour BSKT*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Spartan", sans-serif !important;
+}
+
+nav {
+  background-color: #b2bfba;
+  position: relative;
+}
+nav .nav__menus, nav .nav__icones {
+  display: none;
+}
+nav .nav__logo {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  padding: 10% 0;
+}
+nav .nav_burger {
+  width: 10%;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+
+header {
+  background-color: #020618;
+}
+header img {
+  width: 100%;
+}
+header .header__cta {
+  background-color: #182b8b;
+  color: #ffffff;
+  padding: 3%;
+  margin: 5% 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+main {
+  background-color: #020618;
+}
+
+/*******SECTION 1 CARTE GOLD**********/
+.carte__promoGold .carte__promoGold__vans {
+  background: linear-gradient(to bottom right, #fbdbcd, #deb056);
+  max-width: 100%;
+  display: flex;
+  margin: 10%;
+  border-radius: 10px;
+}
+.carte__promoGold .carte__promoGold__vans .vans__article {
+  max-width: 100%;
+}
+.carte__promoGold .carte__promoGold__vans .vans__article .vans__shoes {
+  width: 100%;
+}
+.carte__promoGold .carte__promoGold__vans .vans_infos {
+  padding-top: 2%;
+  padding-left: -2%;
+  padding-bottom: 2%;
+}
+.carte__promoGold .carte__promoGold__vans .vans_infos p {
+  text-align: center;
+  line-height: 20px;
+}
+.carte__promoGold .carte__promoGold__vans .vans_infos .vans__logo {
+  width: 100%;
+}
+
+/*******SECTION 2 PROMOTION **********/
+.section__autresPromo {
+  margin: 0 3%;
+  background-color: #ffffff;
+}
+.section__autresPromo .container__autresPromo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.section__autresPromo .container__autresPromo .autrePromo {
+  position: relative;
+}
+.section__autresPromo .container__autresPromo .autrePromo .autrePromo__promo {
+  background-color: black;
+  position: absolute;
+  z-index: 50;
+  color: #ffffff;
+  padding: 2%;
+  top: 0;
+  left: 0;
+}
+.section__autresPromo .container__autresPromo .autrePromo .autrePromo__description p {
+  text-transform: uppercase;
+}
+.section__autresPromo .container__autresPromo .autrePromo .autrePromo__description .autrePromo__etoiles {
+  display: flex;
+  flex-direction: row;
+}
+.section__autresPromo .container__autresPromo .autrePromo .autrePromo__description .autrePromo__etoiles svg {
+  width: 15px;
+}
+.section__autresPromo .container__autresPromo .autrePromo .autrePromo__description .autrePromo__prix {
+  display: flex;
+  gap: 20px;
+}
+.section__autresPromo .container__autresPromo .autrePromo .autrePromo__description .autrePromo__prix .prix_barre {
+  text-decoration: line-through;
+  font-size: 0.8em;
+}
+
+/*******SECTION 3 VIGNETTES **********/
+.section_vignettes {
+  margin-top: 10%;
+}
+.section_vignettes .vignette {
+  background-color: #ffffff;
+  position: relative;
+  margin: 0 10%;
+}
+.section_vignettes .vignette .vignette__photo {
+  width: 90%;
+  display: block;
+  margin: 5% auto;
+  padding: 5% 3% 5% 3%;
+}
+.section_vignettes .vignette .vignette__prix {
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 50;
+  top: 10%;
+  right: 5%;
+  padding: 5px;
+}
+.section_vignettes .vignette .vignette_bas {
+  display: flex;
+  gap: 5%;
+  margin: 0 10%;
+  padding-bottom: 10%;
+  justify-content: space-between;
+}
+.section_vignettes .vignette .vignette_bas .vignette__ishop, .section_vignettes .vignette .vignette_bas .vignette__ifavoris {
+  width: 10%;
+  height: 5%;
+}
+.section_vignettes .vignette .vignette_bas .vignette__infos {
+  font-size: 0.8em;
+}
+
+/*******SECTION 4 TRANSITION **********/
+.transition__img {
+  width: 100%;
+  margin: 15% 0;
+}
+
+/*******SECTION 5 qualité **********/
+.section__qualite {
+  background-color: #ffffff;
+}
+.section__qualite .qualite__img {
+  width: 100%;
+  margin: 5% 0;
+}
+
+/*******SECTION 6 PODIUM **********/
+.section__podium h2 {
+  color: #ffffff;
+  font-size: 2em;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  margin-top: 10%;
+}
+.section__podium .container__podium {
+  max-width: 100%;
+}/*# sourceMappingURL=bskt_mobile.css.map */

@@ -1,0 +1,230 @@
+/*feuille de style BSKT Mobile (style principale) */
+
+@import "_variables", "_reset"; 
+
+body{
+    font-family: 'Spartan', sans-serif !important;
+}
+
+nav{
+    background-color: $gris;
+    position: relative; 
+
+    .nav__menus, .nav__icones{
+        display: none;
+    }
+    .nav__logo{
+        width: 30%;
+        display: block;
+        margin: 0 auto;
+        padding: 10% 0;
+    }
+    .nav_burger{
+        width: 10%;
+        position: absolute;
+        top: 10%; 
+        right: 5%;
+    }
+}
+
+
+header{
+    background-color: $bleu_fonce;
+    //à changer avec un diapo avec le JS
+    img{
+        width: 100%;
+    }
+    .header__cta{
+        background-color: $bleu;
+        color: $blanc;
+        padding: 3%;
+        margin: 5% 20%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 10px;
+    }
+    
+}
+
+main{
+    background-color: $bleu_fonce;
+}
+
+/*******SECTION 1 CARTE GOLD**********/
+
+.carte__promoGold{
+    .carte__promoGold__vans{
+        background: linear-gradient(to bottom right, $or_clair, $or_fonce); 
+        max-width: 100%;
+        display: flex;
+        margin: 10%;
+        border-radius: 10px;
+        
+        .vans__article{
+            max-width: 100%;
+            .vans__shoes{
+            width: 100%;
+            }
+        }
+        
+        .vans_infos{
+            padding-top: 2%; 
+            padding-left: -2%;  
+            padding-bottom: 2%;
+            p{
+                text-align: center;
+                line-height: 20px;
+            }
+            .vans__logo{
+                width: 100%;
+            }
+        }
+        
+    }
+} //FIN DE SECTION CARTE GOLD
+
+
+/*******SECTION 2 PROMOTION **********/
+.section__autresPromo{
+    margin: 0 3%;
+    background-color: $blanc;
+
+    .container__autresPromo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+
+        .autrePromo{
+            position: relative;
+
+            //carré noir avec ecrit promo
+            .autrePromo__promo{
+                background-color: black;
+                position: absolute;
+                z-index: 50; 
+                color: $blanc;
+                padding: 2%;
+                top: 0; 
+                left: 0; 
+            }
+                //decription du produit
+                .autrePromo__description{
+
+                    p{
+                        text-transform: uppercase;
+                    }
+                    //div avec les etoiles
+                    .autrePromo__etoiles{
+                        display: flex;
+                        flex-direction: row;
+                        //etoiles
+                        svg{
+                            width: 15px; 
+                        }
+                    }
+                    //div avec les prix
+                    .autrePromo__prix{
+                        display: flex;
+                        gap: 20px;
+                        .prix_barre{
+                            text-decoration: line-through ;
+                            font-size: 0.8em;
+                        }
+                    }
+
+                }
+        } // fin de la card autre promo
+    }
+}//FIN DE SECTION 2 PROMOTION
+
+
+/*******SECTION 3 VIGNETTES **********/
+.section_vignettes{
+    margin-top: 10%;
+
+    .vignette{
+        background-color: $blanc;
+        position: relative;
+        margin: 0 10%;
+        
+        .vignette__photo{
+            width: 90%;
+            display: block;
+            margin: 5% auto;
+            padding: 5% 3% 5% 3%;
+        }
+
+        .vignette__prix{
+            background-color: $blanc;
+            position: absolute;
+            z-index: 50;
+            top: 10%;
+            right: 5%; 
+            padding: 5px;
+        }
+        
+        //la div du bas de la vignette 
+        .vignette_bas{
+            display: flex;
+            gap: 5%;
+            margin: 0 10%;
+            padding-bottom: 10%;
+            justify-content: space-between;
+
+            //les icones shop et favoris 
+            .vignette__ishop, .vignette__ifavoris{
+                width: 10%;
+                height: 5%;
+            }
+            //les informations de la vignette
+            .vignette__infos{
+                font-size: 0.8em;
+            }
+        }
+        
+
+    } // fin de la vignette 
+} // fin de la section__vignette section 3 
+
+/*******SECTION 4 TRANSITION **********/
+    .transition__img{
+        width: 100%;
+        margin: 15% 0;
+    }
+//fin de la section 4 Transition 
+
+/*******SECTION 5 qualité **********/
+
+.section__qualite{
+    background-color: $blanc;
+    .qualite__img{
+        width: 100%;
+        margin: 5% 0;
+    }
+
+} // fin de la section 5 Qualite
+
+/*******SECTION 6 PODIUM **********/
+.section__podium{
+    h2{
+        color: $blanc; 
+        font-size: 2em;
+        font-family: $anton;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    //container Podium 
+    .container__podium{
+        max-width: 100%;
+
+        //podium d'argent 
+        .podium__argent{
+
+        }
+    }
+    
+}
+    
